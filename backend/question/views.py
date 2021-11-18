@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from .models import Answer, InputType, Option, Question, QuestionOption
 from django.http import JsonResponse
-from api/v1 import serializers
+from api.v1 import serializers
 
 # Create your views here.
 
