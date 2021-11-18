@@ -1,5 +1,6 @@
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
+from question import views
 from .viewsets import (
     AnswerViewSet,
     InputTypeViewSet,
@@ -17,4 +18,5 @@ router.register("inputtype", InputTypeViewSet)
 
 urlpatterns = [
     path("", include(router.urls)),
+    path('api/v1/profile/', views.user_profile),
 ]
