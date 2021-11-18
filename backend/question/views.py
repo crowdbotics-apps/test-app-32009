@@ -6,6 +6,7 @@ from django.http import JsonResponse
 
 def user_profile(request):
   user_data = Answer.objects.filter(user_id=1)#request.POST['user_id']
-  return JsonResponse({'foo':'bar'})
-  return {'name':'chirag'}
-  return user_data
+  print('user_data')
+  print(user_data)
+  print('type of : ' + type(user_data))
+  return JsonResponse(user_data)
