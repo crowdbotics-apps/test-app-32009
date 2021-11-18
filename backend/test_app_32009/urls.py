@@ -34,7 +34,6 @@ urlpatterns = [
     path("rest-auth/registration/account-confirm-email/<str:key>/", confirm_email),
     path("rest-auth/registration/", include("rest_auth.registration.urls")),
     path("api/v1/", include("question.api.v1.urls")),
-    path("capi/v1/", include("question.urls")),
 ]
 
 admin.site.site_header = "Test App"
