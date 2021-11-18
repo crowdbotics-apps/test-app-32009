@@ -1,9 +1,9 @@
 from django.urls import path
 from .views import (
     UserDetailView,
-    UserUpdateView,
     user_detail_view,
     user_redirect_view,
+    UserUpdateView,
     user_update_view,
 )
 
