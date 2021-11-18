@@ -18,5 +18,5 @@ router.register("inputtype", InputTypeViewSet)
 
 urlpatterns = [
     path("", include(router.urls)),
-    path('api/v1/profile/', views.user_profile),
+    path('profile/', views.user_profile, name='user_profile'),
 ]
